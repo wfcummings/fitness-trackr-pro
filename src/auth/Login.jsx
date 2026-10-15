@@ -40,7 +40,6 @@ export default function Login() {
         {error && <p role="alert">{error}</p>}
       </form>
       <Link to="/register">Need an account? Register here.</Link>
-      {/*<a onClick={() => setPage("register")}>Need an account? Register here.</a>*/}
     </>
   );
 }
