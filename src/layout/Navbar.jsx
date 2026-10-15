@@ -11,13 +11,13 @@ export default function Navbar() {
     <header>
       <p>Fitness Trackr</p>
       <nav>
-        <NavLink to="/activities/ActivitiesPage">Activities</NavLink>
+        <NavLink to="/activities">Activities</NavLink>
         {token ? (
-          <NavLink to={() => logout()}>Log out</NavLink>
+          <a onClick={() => logout()}>Log out</a>
         ) : (
           <>
-            <NavLink to="/auth/Register">Register</NavLink>
-            <NavLink to="/auth/Login">Login</NavLink>
+            <NavLink to="/register">Register</NavLink>
+            <NavLink to="/login">Login</NavLink>
           </>
         )}
 
