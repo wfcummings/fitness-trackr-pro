@@ -29,6 +29,7 @@ export default function RoutineDetails() {
       setError(e.message);
     }
   };
+
   if (!routine) {
     return <p>Loading...</p>;
   }
